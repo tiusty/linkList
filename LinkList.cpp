@@ -14,7 +14,9 @@ LinkList::LinkList() {
 	head -> pNext = NULL;
 	length = 0;
 }
-void  LinkList::insertItem(sName * newItem) {
+void  LinkList::insertItem(string newWord) {
+	sName * newItem = new sName;
+	newItem -> key = newWord;
 	if(!(head->pNext)) {
 		head -> pNext = newItem;
 		length++; return;
@@ -89,7 +91,7 @@ void LinkList::printList()
 			}
 			else
 			{
-				cout << "--> NULL";
+				cout << " NULL";
 			}
 		}
 		nextList = conductor;
