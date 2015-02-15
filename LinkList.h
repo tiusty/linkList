@@ -25,7 +25,7 @@ private:
 	int length;
 public:
 	LinkList();
-	void insertItem (sName * newItem);
+	void insertItem (string newWord);
 	bool removeItem (string itemKey);
 	sName * getItem (string itemKey);
 	void printList();
